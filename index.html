@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(198, 181, 187);
+
+
+        }
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            background: #fff;
+            border-radius: 24px;
+            padding: 25px;
+            box-shadow: 1.5 1.5 black;
+        }
+        .image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: aliceblue;
+            border: 2px solid rgb(187, 193, 216);
+            margin-bottom: 10px;
+
+        }
+        .image .profile-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .profile-card .text-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+
+        }
+        
+        .text-data .job{
+            font-size: 22px;
+            font-weight: 500;
+            align-items: center;
+            
+
+        }
+        .text-data .skill{
+            font-size: 15px;
+            font-weight: 500;
+            
+
+        }
+        .profile-card .media-butt{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            
+
+        }
+        .media-butt .link{
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            margin: 0 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(9, 65, 114);
+            background-color: rgb(137, 200, 182);
+            text-decoration: none;
+
+        }
+        .profile-card .butt{
+            font-size: 14px;
+            font-weight: 400;
+            border: none;
+            
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            border-radius: 24px;
+            margin: 14px;
+
+            padding: 8px 24px;
+            color: aliceblue;
+            background-color: rgb(80, 76, 107);
+            cursor: pointer;
+        }
+         .butt:hover{
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="home.jpg" alt="" class="profile-img">
+        </div>
+        <div class="text-data">
+           
+            <span class="job">Student At Nirma University</span>
+            <span class="skill">FullStack Developer</span>
+        </div>
+        <div class="media-butt">
+           <a href="#" class="link">
+            <i class='bx bxl-linkedin'></i>
+           </a>
+           <a href="#" class="link">
+            <i class='bx bxl-whatsapp'></i>
+           </a>
+           <a href="#" class="link">
+            <i class='bx bxl-meta' ></i>
+           </a>
+           <a href="#" class="link">
+            <i class='bx bxl-twitter'></i> 
+           </a>
+        </div>
+        <button class="butt">
+            Message
+        </button>
+    </div>
+</body>
+</html>
